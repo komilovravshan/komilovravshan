@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shaxsiy Portfolio | IT & Cybersecurity</title>
+    <style>
+        :root {
+            --bg-color: #0b0f19;
+            --card-bg: #111827;
+            --border-color: #1f2937;
+            --text-color: #e2e8f0;
+            --accent-color: #38bdf8;
+            --accent-green: #3fb950;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: var(--card-bg);
+            padding: 15px 40px;
+            border-bottom: 1px solid var(--border-color);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav .logo {
+            font-weight: bold;
+            color: var(--accent-color);
+            font-size: 1.2em;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li a {
+            color: #94a3b8;
+            text-decoration: none;
+            transition: 0.2s;
+        }
+
+        nav ul li a:hover {
+            color: var(--accent-color);
+        }
+
+        .hero {
+            text-align: center;
+            padding: 60px 20px;
+            background: linear-gradient(to bottom, #111827, var(--bg-color));
+        }
+
+        .hero h1 {
+            color: var(--accent-color);
+            font-size: 2.3em;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            color: #94a3b8;
+            font-size: 1.1em;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 0 auto;
+            padding: 20px;
+            display: grid;
+            gap: 25px;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 25px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        h2 {
+            color: var(--accent-color);
+            margin-top: 0;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 10px;
+            font-size: 1.4em;
+        }
+
+        .skills-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .badge {
+            background-color: #1f2937;
+            color: var(--accent-green);
+            padding: 6px 12px;
+            border-radius: 5px;
+            font-family: monospace;
+            font-size: 0.9em;
+            border: 1px solid #30363d;
+        }
+
+        .article-box {
+            background-color: #0d1117;
+            border-left: 4px solid var(--accent-color);
+            padding: 15px;
+            border-radius: 4px;
+            margin-top: 10px;
+        }
+
+        .article-box h3 {
+            margin: 0 0 8px 0;
+            color: #f8fafc;
+            font-size: 1.1em;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            color: #64748b;
+            border-top: 1px solid var(--border-color);
+            margin-top: 40px;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigatsiya menyusi -->
+    <nav>
+        <div class="logo">🛡️ Portfolio.sec</div>
+        <ul>
+            <li><a href="#about">Men haqimda</a></li>
+            <li><a href="#articles">Maqolalar</a></li>
+            <li><a href="#projects">Loyihalar</a></li>
+            <li><a href="#contact">Aloqa</a></li>
+        </ul>
+    </nav>
+
+    <!-- Asosiy banner qismi -->
+    <header class="hero">
+        <h1>Salom, Men 2-kurs Talabasi & IT Mutaxassisman</h1>
+        <p>Kiberxavfsizlik, tarmoq arxitekturasi va AKT iqtisodiy samaradorligi tadqiqotchisi.</p>
+    </header>
+
+    <main class="container">
+        <!-- Men haqimda -->
+        <section id="about" class="card">
+            <h2>👨‍💻 Men Haqimda</h2>
+            <p>Universitetning 2-kurs talabasiman. Axborot texnologiyalari, tarmoq tizimlari va axborot xavfsizligi
+                yo'nalishlarida o'z bilimlarimni amalda sinab kelmoqdaman. Asosiy e'tiborim tarmoq protokollari va
+                xavfsizlik vositalarini o'rganishga qaratilgan.</p>
+
+            <div class="skills-grid">
+                <span class="badge">Kali Linux</span>
+                <span class="badge">Python</span>
+                <span class="badge">TCP / IP</span>
+                <span class="badge">Nmap</span>
+                <span class="badge">Wireshark</span>
+                <span class="badge">Cisco Packet Tracer</span>
+                <span class="badge">HTML & CSS</span>
+            </div>
+        </section>
+
+        <!-- Ilmiy maqolalar -->
+        <section id="articles" class="card">
+            <h2>📚 Ilmiy Maqolalarim</h2>
+            <div class="article-box">
+                <h3>Axborot va kommunikatsiya texnologiyalarining iqtisodiy samaradorlik mexanizmlari</h3>
+                <p>Birinchi kursimda yozgan ilk ilmiy maqolam. Unda zamonaviy AKT infratuzilmasining iqtisodiyotdagi
+                    o'rni va samaradorligini oshirish mexanizmlari tahlil qilingan.</p>
+            </div>
+        </section>
+
+        <!-- Loyihalar -->
+        <section id="projects" class="card">
+            <h2>🛠️ Amaliy Loyihalarim</h2>
+            <ul>
+                <li><strong>Cisco Packet Tracer:</strong> O'rta darajadagi tarmoq topologiyasini loyihalash va
+                    marshrutizatorlarnisozlash.</li>
+                <li><strong>Interactive Lab Hub:</strong> Brauzerda ishlaydigan tarmoq buyruqlari va xavfsizlik
+                    qo'llanmasi sayti.</li>
+                <li><strong>Python Automation:</strong> Kundalik vazifalarni avtomatlashtirish uchun yozilgan kichik
+                    skriptlar.</li>
+            </ul>
+        </section>
+
+        <!-- Bog'lanish -->
+        <section id="contact" class="card">
+            <h2>📬 Bog'lanish</h2>
+            <p>Mening bilan bog'lanish yoki loyihalarimni kuzatish uchun:</p>
+            <ul>
+                <li>Email: <a href="komilovrrr@gmail.com">sizning-pochta@gmail.com</a></li>
+                <li>GitHub: <a href="https://github.com" target="_blank">github.com/foydalanuvchi</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 | Kali Linux & VS Code yordamida yaratildi.</p>
+    </footer>
+
+</body>
+
+</html>
